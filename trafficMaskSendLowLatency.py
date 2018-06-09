@@ -18,7 +18,10 @@ class Sender:
     delay = 1
     isPeriodicallySending = False
     q = None
-    
+
+    # host and port specify the server to connect to. packetSize specifies
+    # the constant packet size, while delay specifies the constant
+    # interpacket delay.
     def __init__(self, host, port, packetSize, delay):
         Sender.HOST = host    # The remote host
         Sender.PORT = port    # The same port as used by the server

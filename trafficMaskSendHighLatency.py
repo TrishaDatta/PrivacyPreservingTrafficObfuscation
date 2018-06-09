@@ -21,6 +21,14 @@ class Sender:
     isPeriodicallySending = False
     q = None
     
+    # host and port specify the server to connect to. dist must be either
+    # Sender.UNIFORM_DIST (default) or Sender.NORMAL_DIST; this specifies
+    # the type of distribution for packet sizes. [param1, param2] specifies
+    # the interval from which interpacket delays are drawn. If dist is
+    # Sender.UNIFORM_DIST, then packet sizes are drawn uniformly from the 
+    # interval [packetSizeLow, packetSizeHigh]. Otherwise, packet sizes
+    # are drawn from a Gaussian distribution with mean packetSizeLow and
+    # variance packetSizeHigh.
     def __init__(self, host, port, dist, param1, param2, packetSizeLow, packetSizeHigh):
         Sender.HOST = host    # The remote host
         Sender.PORT = port    # The same port as used by the server
