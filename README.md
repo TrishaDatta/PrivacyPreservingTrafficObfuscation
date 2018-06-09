@@ -20,8 +20,10 @@ parameters for the packet size and interpacket delay distributions. The
 low-latency solution construction takes in a host and port to connect to, 
 a constant packet size, and a constant interpacket delay. After 
 calling the constructor, users should call the startPeriodicallySending() 
-function. Then, they can call send(msg) to send messages. When they wish to stop sending periodically, they can call close(). The receiving side is much
-simpler. As arguments it takes in a socket and the connection conn returned by
-accept(). It replaces conn.recv().
+function. This will begin the periodic sending of messages. 
+Then, they can call send(msg) to send messages. When they wish to stop sending periodically, they can call close(). The receiving side is much
+simpler. It takes in a socket and the connection conn returned by
+accept() as arguments. It replaces conn.recv().
 
-
+The commented-out main functions can be used to run simple examples. The provided
+csv files are derived from traffic from real IoT devices. 

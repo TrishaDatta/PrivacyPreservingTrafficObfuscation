@@ -114,7 +114,6 @@ class Sender:
 
 def main():
     sender = Sender("10.0.0.111", 3490, 150, 0.05)
-
     time.sleep(1)
     sender.startPeriodicallySending()
     i = 0
