@@ -136,6 +136,7 @@ def main():
     time.sleep(3)
     sender.close()
 
+#main()
 
 
 

@@ -4,7 +4,8 @@ import socket
 import sys
 
 # This function is used to process messages on the
-# receiving end
+# receiving end. s is a socket and conn is the
+# connection returned by accept()
 def recv(s, conn):
     string = ''
     while 1:

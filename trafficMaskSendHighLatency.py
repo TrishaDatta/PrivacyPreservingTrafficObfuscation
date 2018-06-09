@@ -154,7 +154,7 @@ def main():
                 i += 1
     sender.close()
 
-main()
+#main()
 
 
 
