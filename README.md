@@ -1,7 +1,7 @@
 # PrivacyPreservingTrafficObfuscation
 
 This is the code described in "A Developer-Friendly Library for Smart Home IoT Privacy-Preserving Traffic Obfuscation" 
-published at IoT S&P'18: ACM SIGCOMM 2018 Workshop on IoT Security and Privacy , August 20, 2018, Budapest, Hungary. 
+published at IoT S&P'18: ACM SIGCOMM 2018 Workshop on IoT Security and Privacy, August 20, 2018, Budapest, Hungary. 
 The paper and an in-depth description of the library can be found here: https://dl.acm.org/doi/10.1145/3229565.3229567
 
 This library is meant to be used by IoT developers to obfuscate the traffic sent by their devices. 
